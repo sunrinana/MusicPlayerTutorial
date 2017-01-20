@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MusicPlayerTutorial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="427.166" Width="295.341">
     <Grid>
-        
+        <StackPanel Margin="10">
+            <Label Name="lblStatus" Content="Not Playing" HorizontalContentAlignment="Center" Margin="5" />
+            <WrapPanel HorizontalAlignment="Center">
+                <Button Name="btnPlay" Click="btnPlay_Click">Play</Button>
+                <Button Name="btnPause" Click="btnPause_Click">Pause</Button>
+                <Button Name="btnStop" Click="btnStop_Click">Stop</Button>
+            </WrapPanel>
+        </StackPanel>
     </Grid>
 </Window>
